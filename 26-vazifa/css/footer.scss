@@ -1,0 +1,51 @@
+@font-face {
+    font-family: karla;
+    src: url(/fonts/Karla-Regular.ttf);
+}
+
+#footer {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px 0 30px;
+    text-align: justify;
+    
+    &>.row{
+
+        &>.col-sm-6 {
+            padding: 10px;
+            font-family: karla;
+
+            &>h5 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            &>p {
+                font-size: 14px;
+                color: rgba(29, 31, 46, 0.7);
+                line-height: 20px;
+            }
+            &>h6 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            &>a {
+                text-decoration: none;
+                margin-bottom: 15px;
+                color: rgba(29, 31, 46, 0.7);
+                font-weight: karla;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    border-bottom: 1px solid black;
+                }
+            }
+            &>img {
+                width: auto;
+                height: 15px;
+            }
+        }
+    }
+}

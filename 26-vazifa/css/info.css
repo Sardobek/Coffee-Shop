@@ -1,0 +1,36 @@
+@font-face {
+  font-family: karla;
+  src: url(/fonts/Karla-Regular.ttf);
+}
+#info {
+  width: 100%;
+  height: auto;
+  padding: 100px 30px;
+  text-align: center;
+  font-family: karla;
+}
+#info > h2 {
+  font-size: 28px;
+  color: rgb(29, 31, 46);
+  margin-bottom: 15px;
+}
+#info > p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: rgba(29, 31, 46, 0.7);
+}
+#info > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(162, 95, 75, 0.2);
+  font-size: 15px;
+  color: rgb(162, 95, 75);
+  transition: all 0.5s ease-in-out;
+}
+#info > button:hover {
+  color: rgb(128, 64, 44);
+  border-bottom: 1px solid rgb(162, 95, 75);
+}/*# sourceMappingURL=info.css.map */

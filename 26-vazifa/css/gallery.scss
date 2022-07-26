@@ -1,0 +1,159 @@
+@font-face {
+    font-family: karla;
+    src: url(/fonts/Karla-Regular.ttf);
+}
+
+#gallery {
+    width: 80%;
+    height: auto;
+    margin:auto;
+    text-align: center;
+
+    &>h4 {
+        font-family: karla;
+        font-size:12px;
+        color: rgba(29, 31, 46, 1);
+        margin: 50px 0;
+    }
+    &>.top-gallery {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &>div {
+            transition: all 0.5s ease-in-out;
+            margin-bottom: 10px;
+            cursor: pointer;
+            
+            &>img {
+                transition: all 0.5s ease-in-out;
+                margin-bottom: 20px;
+
+                &:hover {
+                    box-shadow: 0 0 10px black;
+                    cursor: pointer;
+                }
+            }
+            &>h6 {
+                font-size: 16px;
+                color:rgba(29, 31, 46, 1);
+            }
+            &>p {
+                font-size: 16px;
+                color: rgba(29, 31, 46, 0.7);
+            }
+        }
+    }
+
+    &>.gallery-items {
+        width: 100%;
+        height: auto;
+        
+        &>.row {
+
+            &>.col {
+                margin-bottom: 10px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    // box-shadow: 0 0 10px black;
+                    transform: scale(1.03);
+
+                    &>img{
+                        box-shadow: 0 0 10px black;
+                    }
+                }
+                &>img {
+                    margin-bottom: 15px;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                &>p {
+
+                    &>span {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+    &>.gallery-footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &>.gallery-left {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &>img {
+                margin: 5px;
+                object-fit: cover;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    filter: drop-shadow(0 0 10px black);
+                }
+            }
+            &>div {
+                display: flex;
+                flex-direction: column;
+
+                &>img {
+                    margin: 10px;
+                    object-fit: cover;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        filter: drop-shadow(0 0 5px black);
+                    }
+                }
+            }
+        }
+        &>.gallery-right {
+            font-family: karla;
+
+            &>h6 {
+                font-size: 12px;
+                color: rgba(29, 31, 46, 1);
+                margin-bottom: 15px;
+            }
+            &>h3 {
+                font-size: 30px;
+                color: rgba(29, 31, 46, 1);
+                margin-bottom: 15px;
+            }
+            &>p {
+                font-size: 16px;
+                color: rgba(29, 31, 46, 0.7);
+                margin-bottom: 15px;
+            }
+            &>button {
+                background-color: rgba(29, 31, 46, 1);
+                color: white;
+                padding: 5px 10px;
+                border: 1px solid rgba(29, 31, 46, 1);
+                outline: none;
+                font-size: 14px;
+                letter-spacing: 2px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    box-shadow:  0 0 5px rgba(29, 31, 46, 1);
+                    background-color: transparent;
+                    color: rgba(29, 31, 46, 1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
